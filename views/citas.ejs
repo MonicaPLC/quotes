@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Quotes</title>
+</head>
+
+<body>
+
+  <div>
+
+    <h1>Here are the awesome quotes:</h1>
+
+    <%if(mensaje!=""){%>
+
+      <div class="alert alet-success">
+        Mensaje:<%=mensaje%>
+      </div>
+      <%}%>
+
+
+
+        <% for (let cita of citas) { %>
+          <!--citas en el nombre variable que le coloqué en server-->
+          <q>
+            <%=cita.quote%>
+          </q>
+          <cite>~
+            <%=cita.author%>
+          </cite>
+
+          <a href="/update/<%=cita.id%>"> <img id="update" src="editar.png" width="40" height="40"
+              alt="botón para editar cita"></a>
+          <a href="/delete/<%=cita.id%>"><img id="delete" src="delete.jpg" width="40" height="40"
+              alt="botón para borrar cita"></a>
+          <!--a href ponerle la ruta-->
+          <hr>
+          </dl>
+          <% } %>
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

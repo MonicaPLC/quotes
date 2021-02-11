@@ -1,0 +1,103 @@
+form {
+width: 25%;
+border: 5px solid #F0E68C;
+border-radius: 20px;
+padding: 10px;
+margin: auto;
+width: 50%;
+height: 50%;
+
+}
+
+div{
+
+	margin-top: 150px;
+
+
+}
+body{
+ background-image: url(img/estrellas.gif);
+
+ 
+}
+
+h2{
+
+	text-align: center;
+	color: white;
+	font-family: arial black;
+}
+
+
+
+label {
+	font-family: Arial Black;
+font-size: 12px;
+display: block;
+width: 100%;
+color: white;
+}
+
+textarea{
+
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+	border-radius: 10px;
+	border: 2px solid black;
+	
+	}
+
+input,textarea{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box; 
+
+}
+input{
+
+	border:2px solid black;
+	border-radius: 10px;
+}
+
+/*input  :focus, textarea:focus {
+border: 1px solid #1668C4;
+}
+*/
+input[type="submit"]{
+	background: #1668C4;
+	color:black;
+	border: none;
+	}
+
+
+	input[type="submit"]:hover{
+	background: #4a88f4;
+	cursor: pointer;
+	border: none;
+	}
+
+	#submit{
+
+width: 150px;
+height: 40px;
+background:  #4a88f4;
+margin-left: 100px;
+border-radius: 10px;
+border: 1px solid black;
+	}
+
+
+	button{width: 150px;
+	height: 40px;
+	background: #C0C0C0;
+	margin-left: 200px;
+	border-radius: 10px;
+		}
+
+	
+
+
+
+	
